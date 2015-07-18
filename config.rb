@@ -32,6 +32,8 @@ activate :directory_indexes
 
 page "/feed.xml", layout: false
 
+set :blog_name, 'Middlehoy'
+
 ###
 # Compass
 ###

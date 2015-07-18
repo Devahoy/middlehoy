@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title><%= site.title =></title>
+  <title><% if current_article.nil? %> <%= blog_name %> <% else %> <%= current_article.title %> <% end %></title>
 
   <!-- Bootstrap Core CSS -->
   <%= stylesheet_link_tag 'bootstrap.min' %>
