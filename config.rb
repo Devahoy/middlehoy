@@ -87,6 +87,15 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+activate :deploy do |deploy|
+  deploy.method   = :ftp
+  deploy.host     = 'ftp.example.com'
+  deploy.path     = '/srv/www/site'
+  deploy.user     = 'tvaughan'
+  deploy.password = 'secret'
+end
+
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
